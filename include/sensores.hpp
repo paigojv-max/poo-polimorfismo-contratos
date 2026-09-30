@@ -14,8 +14,7 @@ public:
         return true;
     }
     bool emAlerta() const override {
-        // TODO: substituir o marcador pelo comportamento contratado.
-        return false;
+        return valor() < 20.0;
     }
 };
 
@@ -30,9 +29,8 @@ public:
         valor_ = leitura;
         return true;
     }
-    bool emAlerta() const override {
-        // TODO: substituir o marcador pelo comportamento contratado.
-        return false;
+   bool emAlerta() const override {
+        return valor() > 45.0;
     }
 };
 
@@ -48,8 +46,7 @@ public:
         return false;
     }
     bool emAlerta() const override {
-        // TODO: substituir o marcador pelo comportamento contratado.
-        return false;
+        return valor() > 8.0;
     }
 };
 
